@@ -1,19 +1,1 @@
 env : dev
-spring:
-  application:
-    name: config
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: CONFIG-SERVICE
-      profile: dev
-
-    consul:
-      host: localhost
-      port: 8500
-      discovery:
-        health-check-interval: 5s
-
-server:
-  port: 9005
